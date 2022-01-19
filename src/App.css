@@ -7,17 +7,35 @@
   pointer-events: none;
 }
 
-.juntos{
-  width: auto;
-}
+
 
 .background{
-  width: 500px;
-  height: 700px;
+  vertical-align: bottom;
+  width: 100%;
+  height: 110%;
   opacity: 80%;
-  float: right;
-
+  
 }
+
+
+
+
+
+.pato{
+  background-color: #F2EADF;
+  height: 110%;
+  padding-top: 4%;
+}
+.bloque{
+  
+  size: cover;
+  width: 600px;
+  max-width: 85vw;
+  height: 100%;
+  float:right;
+  vertical-align: bottom;
+}
+
 
 .base{
   padding-top: 5%;
@@ -31,9 +49,16 @@
 
 .container{
   box-shadow: 7px 7px 13px -8px rgba(0,0,0,0.5);
-  background-color: #F2F2F2;
+  background-color: #AABDBF;
   
 }
+
+.btn{
+  background-color: #F2ADA7 !important;
+  border-color: #F2ADA7;
+}
+
+
 
 .textoLogin{
   padding-left: 5%;
@@ -45,9 +70,17 @@
   .container{
     box-shadow: 7px 7px 13px -8px rgba(0,0,0,0.5);
     background-color: #853f3f;
-    padding-left: 5%;
-
+    height: 100%;
+    width: 90%;
+    
   }
+  
+  
+  .bloque{
+    width: 100%;
+    margin-top: 100%;
+  }
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

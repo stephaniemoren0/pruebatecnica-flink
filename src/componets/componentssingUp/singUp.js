@@ -1,4 +1,5 @@
 import React, { useState} from 'react'
+import background from '../background.png'
 import Title from '../componentsTitle/componentsTitle';
 import LabelCustom from '../componentsLabel/componentsLabel';
 import InputCustom from '../componentsInput/componentsInput';
@@ -72,7 +73,9 @@ const Singup = () =>{
     console.log ("contraseña:", contraseña)
 
     return(
-        <div className="row base animate__animated animate__fadeInDown container-fluid">
+        
+        <div className="color">
+        <div className="base animate__animated animate__fadeInDown container-fluid">
             <div className="col container-fluid container">
                 <Title text="Registrate" />
                 <LabelCustom text="Nombre" />
@@ -129,7 +132,7 @@ const Singup = () =>{
                 <br />
                 <div>
                 <FormGroup>
-                <LabelCustom text="preferencia de genero"/>
+                <LabelCustom text="Preferencia de Genero"/>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radio1" value="H" 
                     checked={preferencia == "H" ? true : false}
@@ -155,9 +158,9 @@ const Singup = () =>{
                 </FormGroup>
                 </div>
                 <div>
-                <br />
+                
                 <FormGroup>
-                <LabelCustom text="genero"/>
+                <LabelCustom text="Genero"/>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="radiogenero1" value="H" 
                     checked={genero == "H" ? true : false}
@@ -183,11 +186,13 @@ const Singup = () =>{
                 </FormGroup>
                 </div>
                 
-                <button onClick={handleSubmit} type="submit" className="btn btn-primary">Registrar</button>
-                <Link to="/">Inicio de Sesion</Link>
+                <button onClick={handleSubmit} type="submit" className="btn btn-primary entrar">Registrar</button>
+                <Link className="btn entrar btn-primary" to="/">Inicio de Sesion</Link>
+                <br />
             </div>
             
             <br />
+        </div>
         </div>
     )
 };

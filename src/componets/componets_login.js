@@ -10,6 +10,7 @@ import Alls from './componentsAll/componentsAll';
 
 
 
+
 const Components = () =>{
     const [email, setEmail] = useState("");
     const [contraseña, setContraseña] = useState("");
@@ -85,8 +86,10 @@ const Components = () =>{
                         </div>
                         <div className="form-group form-check">
                         </div>
-                            <button onClick={handleSubmit} type="submit" className="btn btn-primary">Entrar</button>
-                            <Link to="/registro">Registro</Link>
+                        <button onClick={handleSubmit} type="submit" className="btn entrar btn-primary">Iniciar Sesion</button>
+                        <br />
+                        
+                        <Link className="btn entrar btn-primary" to="/registro">Registro</Link>
                     </form>
                     <br />
                 </div>

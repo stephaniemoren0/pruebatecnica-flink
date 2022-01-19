@@ -5,3 +5,34 @@
     border: 2px solid #d1d1d1 ;
 }
 
+.color{
+    background-color: #F2EADF ;
+    height: 110%;
+    height: cover;
+    padding-bottom: 10%;
+}
+
+    .container{
+        box-shadow: 7px 7px 13px -8px rgba(0,0,0,0.5);
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 6%;
+    }
+
+    .entrar{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 19px;
+    align-items: center;
+    width: 100%;
+    }
+
+@media only screen and (max-width: 600px) {
+    .container{
+    box-shadow: 7px 7px 13px -8px rgba(0,0,0,0.5);
+    background-color: #F2EADF;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+}
