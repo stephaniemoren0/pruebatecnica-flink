@@ -1,5 +1,4 @@
 import React, { useState} from 'react'
-import background from '../background.png'
 import Title from '../componentsTitle/componentsTitle';
 import LabelCustom from '../componentsLabel/componentsLabel';
 import InputCustom from '../componentsInput/componentsInput';

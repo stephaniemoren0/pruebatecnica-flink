@@ -18,7 +18,10 @@
 }
 
 
-
+.body{
+  background-color:#966219;
+  max-height: cover;
+}
 
 
 .pato{
@@ -81,6 +84,18 @@
     margin-top: 100%;
   }
   
+  .tarjetaMatch{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 500px;
+    padding: 20px;
+    min-width: 100px;
+    min-height: 100px;
+    height: 500px;
+    border-radius: 20px;
+    background-size: cover;
+    box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.048);
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

@@ -1,19 +1,22 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, } from 'react'
+import { useNavigate } from 'react-router-dom';
 import './componentsAll.css';
 import axios from "axios";
-import Genero from './componentsGenero/componentsGenero';
 import Tarjetas from "react-tinder-card"
+import { Navbar, NavbarBrand, NavItem, NavLink, } from 'reactstrap';
+import matchesC from "../../vectors/icono3.png"
+import salir from "../../vectors/icono2.png"
+import logoT from "../../vectors/icono1.png"
 
-
-const Alls = ( {user} ) => {
-    const [loginUser, setLoginuser] = useState([]);
+const Alls = (  ) => {
+    const navegar = useNavigate()
+    const [user, setUser] = useState([]);
     const [lista, setLista] = useState([]);
-    const [swiped, setSwiped] = useState([]);
-    const [nombreSeleccionado, setNombreSeleccionado] = useState("");
-    const [imagenSeleccionado, setImagenSeleccionado] = useState("");
-    const [ageSeleccionado, setAgeSeleccionado] = useState("");
+    var swiped = false;
+
     useEffect(() => {
-        setLoginuser(user)
+        const user = JSON.parse(localStorage.getItem("user"))        
+        setUser(user)
         obtenerMatch()
         console.log("user:",user)
     }, [])
@@ -40,9 +43,11 @@ const Alls = ( {user} ) => {
             return data.allWaifusAndHusbandos
         }
     }
-    const onSwipe = (direction) => {
-        setSwiped (direction + "")
-        console.log('You swiped: ' + direction)
+    function onSwipe (direction) {
+        
+        let direccion = '' + direction
+        console.log(direccion== "left")
+        swiped = direccion == "right"
     }
 
     
@@ -56,21 +61,20 @@ const Alls = ( {user} ) => {
             console.log(error)
         })
     }
-    
+    const logout=()=>{
+        localStorage.clear()
+        navegar("/", {replace:true})
+    }
     const onCardLeftScreen = (name, image, age) => {
-        setNombreSeleccionado(name)
-        setImagenSeleccionado(image)
-        setAgeSeleccionado(age)
-        consumeMatch(name, image, age)
+        
         console.log("direccion", swiped)
-        if(swiped === "right"){
-            
-            consumeMatch()
+        if(swiped){
+            consumeMatch(name, image, age)
         }
         console.log(name + ' left the screen')
     }
     function genero(preferredGender){
-        console.log(loginUser)
+        
         if(preferredGender === "H"){
             return "https://flink-web-test.herokuapp.com/api/v1/getHusbandos"
         }
@@ -82,7 +86,13 @@ const Alls = ( {user} ) => {
         }
     }
     return(
-        <div className="contenedorPokemon">
+        <div>
+        <Navbar className="colorNav" >
+        <NavbarBrand><img className="logo" src={logoT}/></NavbarBrand>
+        <NavLink  href={`/match/${user.email}` }><img className="logo" src={matchesC}/></NavLink>
+        <NavLink  onClick={logout}  ><img className="logo" src={salir}/></NavLink>
+        </Navbar>
+        <div className="contenedorPokemon container-fluid">
             <div className="contenedorTarjeta">
             {lista.map(pokemon => (
                 <Tarjetas 
@@ -103,6 +113,7 @@ const Alls = ( {user} ) => {
                 </Tarjetas>
             )) }
             </div>
+        </div>
         </div>
     )
 };
