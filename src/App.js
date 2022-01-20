@@ -11,16 +11,12 @@ import ContenedorMatch from './componets/componentsMatch/componentsMatch';
 function App() {
   return (
     <Router>
-    <div>
     <Routes>
         <Route  path="/" element={<Login />}> </Route>  
         <Route  path="/all" element={<Alls />}> </Route>       
         <Route path="/registro" element={<Singup />}></Route>
         <Route path="/match/:email" element={<ContenedorMatch />}></Route>
       </Routes>
-      
-      
-    </div>
     </Router>
   );
 }
