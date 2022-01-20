@@ -1,6 +1,6 @@
 # Tinder de Waifus y Husbandos
 
- Es pagina web diseñada para encontrar tu pareja correcta
+ Es pagina web diseñada para encontrar tu waifu o husbando correcta
 
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu
 máquina local para propósitos de desarrollo y pruebas.
