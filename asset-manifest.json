@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/pruebatecnica-flink/static/css/main.6f95b944.css",
-    "main.js": "/pruebatecnica-flink/static/js/main.f6ea980d.js",
+    "main.js": "/pruebatecnica-flink/static/js/main.d7d7336a.js",
     "static/js/787.3004f58d.chunk.js": "/pruebatecnica-flink/static/js/787.3004f58d.chunk.js",
     "static/media/background.png": "/pruebatecnica-flink/static/media/background.8de0704539373c84d334.png",
     "index.html": "/pruebatecnica-flink/index.html",
     "main.6f95b944.css.map": "/pruebatecnica-flink/static/css/main.6f95b944.css.map",
-    "main.f6ea980d.js.map": "/pruebatecnica-flink/static/js/main.f6ea980d.js.map",
+    "main.d7d7336a.js.map": "/pruebatecnica-flink/static/js/main.d7d7336a.js.map",
     "787.3004f58d.chunk.js.map": "/pruebatecnica-flink/static/js/787.3004f58d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f95b944.css",
-    "static/js/main.f6ea980d.js"
+    "static/js/main.d7d7336a.js"
   ]
 }
