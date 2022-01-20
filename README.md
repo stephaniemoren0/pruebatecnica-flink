@@ -13,6 +13,7 @@ máquina local para propósitos de desarrollo y pruebas.
 - [React Tinder Card](https://www.npmjs.com/package/react-tinder-card) - es una libreria que facilita el diseño y el movimiento de las tarjetas simulando a tinder 
 - [Reactstrap](https://6-4-0--reactstrap.netlify.app/) - es una biblioteca que convierte a boostrap en componentes para react
 - [axios](https://github.com/axios/axios) - es una biblioteca para el manejar el consumo de las apis
+- [Animate](https://animate.style/) - libreria para crear animaciones 
 
 
 ## Instalacion
