@@ -16,7 +16,6 @@ const ContenedorMatch = () => {
     
     useEffect(() => {
         obtenerMatch()
-        
     }, [])
 
     const logout=()=>{
@@ -30,7 +29,6 @@ const ContenedorMatch = () => {
             let personas =   respuesta.data.matches
             console.log("listas:", personas)
             setLista( personas )
-            
         }).catch(error => {
             console.log(error)
         })
@@ -39,7 +37,6 @@ const ContenedorMatch = () => {
     return(
         <div>
             <Navbar className="colorNav container-fluid" >
-        
         <Link  to="/all"><img className="logo" src={logoT}/></Link>
         <NavLink  onClick={logout}  ><img className="logo" src={salir}/></NavLink>
         </Navbar>
@@ -55,8 +52,6 @@ const ContenedorMatch = () => {
                     style={{backgroundImage:`url(${pokemon.matchImage})`}}
                     >
                         <h2>{pokemon.matchName}</h2>
-                        
-
                     </div>
                 </Tarjetas>
             )) }

@@ -107,8 +107,6 @@ const Alls = (  ) => {
                     style={{backgroundImage:`url(${pokemon.image})`}}
                     >
                         <h2>{pokemon.name}, {pokemon.age}, {pokemon.gender}</h2>
-                        
-
                     </div>
                 </Tarjetas>
             )) }

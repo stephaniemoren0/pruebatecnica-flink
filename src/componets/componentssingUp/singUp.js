@@ -26,7 +26,6 @@ const Singup = () =>{
         const respuesta = await axios.post(url, data).then(respuesta => {
             navegar("/", {replace:true})
             console.log ("respuesta:",respuesta) // validacion de usuario
-            
         }).catch(error => {
         })
     }
@@ -55,7 +54,6 @@ const Singup = () =>{
         let newAccount={ nombre, apellido ,correo, contraseña, edad}
         if(newAccount){
             consumeRegistre()
-
         }
         
     }
@@ -184,12 +182,10 @@ const Singup = () =>{
                 </div>
                 </FormGroup>
                 </div>
-                
                 <button onClick={handleSubmit} type="submit" className="btn btn-primary entrar">Registrar</button>
                 <Link className="btn entrar btn-primary" to="/">Inicio de Sesion</Link>
                 <br />
             </div>
-            
             <br />
         </div>
         </div>

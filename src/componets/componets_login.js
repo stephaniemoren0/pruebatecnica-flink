@@ -86,7 +86,6 @@ const Components = () =>{
                         </div>
                         <button onClick={handleSubmit} type="submit" className="btn entrar btn-primary">Iniciar Sesion</button>
                         <br />
-                        
                         <Link className="btn entrar btn-primary" to="/registro">Registro</Link>
                     </form>
                     <br />
