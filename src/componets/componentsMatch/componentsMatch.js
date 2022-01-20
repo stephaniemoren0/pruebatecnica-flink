@@ -41,7 +41,7 @@ const ContenedorMatch = () => {
         <NavLink  onClick={logout}  ><img className="logo" src={salir}/></NavLink>
         </Navbar>
             <div>
-            <div className="container-fluid  row row-cols-1 col-auto row-cols-sm-1 row-cols-lg-2 row-cols-xl-3 g-2" >
+            <div className="  row row-cols-1 col-auto row-cols-sm-1 row-cols-lg-2 row-cols-xl-3 g-2" >
             {lista.map(pokemon => (
                 <Tarjetas 
                 className="col col-auto contenedorMatch img-fluid"
